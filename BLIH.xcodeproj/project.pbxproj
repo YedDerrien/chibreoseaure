@@ -17,6 +17,8 @@
 		F0703641224ADA610028FE4E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0703640224ADA610028FE4E /* RealmHelper.swift */; };
 		F0703643224ADAAB0028FE4E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0703642224ADAAB0028FE4E /* Extension.swift */; };
 		F0703645224ADB260028FE4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0703644224ADB260028FE4E /* Constants.swift */; };
+		F0E5080B224AEB2C0031941B /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E50809224AEB2C0031941B /* RepoTableViewCell.swift */; };
+		F0E5080C224AEB2C0031941B /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E5080A224AEB2C0031941B /* RepoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +48,15 @@
 		F070360E224AD0A50028FE4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0703611224AD0A50028FE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0703613224AD0A50028FE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0703618224AD0A50028FE4E /* BLIHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BLIHTests.xctest; path = "/Users/guillaume/BLIH/build/Debug-iphoneos/BLIHTests.xctest"; sourceTree = "<absolute>"; };
-		F0703623224AD0A50028FE4E /* BLIHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BLIHUITests.xctest; path = "/Users/guillaume/BLIH/build/Debug-iphoneos/BLIHUITests.xctest"; sourceTree = "<absolute>"; };
 		F0703637224AD7870028FE4E /* BLIHLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLIHLogger.swift; sourceTree = "<group>"; };
 		F0703640224ADA610028FE4E /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		F0703642224ADAAB0028FE4E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F0703644224ADB260028FE4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F0703649224ADF200028FE4E /* BLIH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BLIH.app; path = "/Users/guillaume/BLIH/build/Debug-iphoneos/BLIH.app"; sourceTree = "<absolute>"; };
+		F0E50806224AE1CE0031941B /* BLIH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLIH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E50807224AE1CE0031941B /* BLIHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLIHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E50808224AE1CE0031941B /* BLIHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLIHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E50809224AEB2C0031941B /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepoTableViewCell.swift; path = BLIH/Views/UITableViewCell/RepoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		F0E5080A224AEB2C0031941B /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RepoTableViewCell.xib; path = BLIH/Views/UITableViewCell/RepoTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,9 @@
 				F0703606224AD0A40028FE4E /* BLIH */,
 				C28C872D6A6429AA2A5F8F2E /* Pods */,
 				09EEA4E4A15C07465D08B87D /* Frameworks */,
+				F0E50806224AE1CE0031941B /* BLIH.app */,
+				F0E50807224AE1CE0031941B /* BLIHTests.xctest */,
+				F0E50808224AE1CE0031941B /* BLIHUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +164,8 @@
 		F070363D224AD98B0028FE4E /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F0E50809224AEB2C0031941B /* RepoTableViewCell.swift */,
+				F0E5080A224AEB2C0031941B /* RepoTableViewCell.xib */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -223,7 +232,7 @@
 			);
 			name = BLIH;
 			productName = BLIH;
-			productReference = F0703649224ADF200028FE4E /* BLIH.app */;
+			productReference = F0E50806224AE1CE0031941B /* BLIH.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F0703617224AD0A50028FE4E /* BLIHTests */ = {
@@ -241,7 +250,7 @@
 			);
 			name = BLIHTests;
 			productName = BLIHTests;
-			productReference = F0703618224AD0A50028FE4E /* BLIHTests.xctest */;
+			productReference = F0E50807224AE1CE0031941B /* BLIHTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F0703622224AD0A50028FE4E /* BLIHUITests */ = {
@@ -259,7 +268,7 @@
 			);
 			name = BLIHUITests;
 			productName = BLIHUITests;
-			productReference = F0703623224AD0A50028FE4E /* BLIHUITests.xctest */;
+			productReference = F0E50808224AE1CE0031941B /* BLIHUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -313,6 +322,7 @@
 				F0703612224AD0A50028FE4E /* LaunchScreen.storyboard in Resources */,
 				F070360F224AD0A50028FE4E /* Assets.xcassets in Resources */,
 				F070360D224AD0A40028FE4E /* Main.storyboard in Resources */,
+				F0E5080C224AEB2C0031941B /* RepoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +415,7 @@
 				F0703643224ADAAB0028FE4E /* Extension.swift in Sources */,
 				F070360A224AD0A40028FE4E /* ViewController.swift in Sources */,
 				F0703641224ADA610028FE4E /* RealmHelper.swift in Sources */,
+				F0E5080B224AEB2C0031941B /* RepoTableViewCell.swift in Sources */,
 				F0703608224AD0A40028FE4E /* AppDelegate.swift in Sources */,
 				F0703638224AD7870028FE4E /* BLIHLogger.swift in Sources */,
 				F0703645224ADB260028FE4E /* Constants.swift in Sources */,
